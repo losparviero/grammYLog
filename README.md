@@ -24,13 +24,19 @@ Simply copy the plugin code from ```log.js``` and place it in your grammY projec
 
 <br>
 
+<details>
+
+<summary>
 If you want to try it out first:
+</summary>
 
 Firstly, clone this repo.
 
 Then run ```npm i```.
 
 Rename example.env to .env and provide bot token.
+
+</details>
 
 <br>
 

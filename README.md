@@ -33,11 +33,11 @@ If you want to try it out first:
 
 <br>
 
-Firstly, clone this repo.
+1. Firstly, clone this repo.
 
-Then run ```npm i```.
+2. Then run ```npm i```.
 
-Rename example.env to .env and provide bot token.
+3. Rename example.env to .env and provide bot token.
 
 </details>
 

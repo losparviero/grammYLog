@@ -64,6 +64,12 @@ Modify it as per your needs.
 
 <br>
 
+### Contribute
+
+If you'd like to contribute to the project, please read grammY's [guide to plugins](https://grammy.dev/plugins/guide.html).
+
+<br>
+
 ### License
 
 MIT  ©️ Zubin

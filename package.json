@@ -1,0 +1,15 @@
+{
+  "name": "grammylog",
+  "version": "1.0.0",
+  "description": "Logging plugin for the grammY framework!",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zubin",
+  "email": "me@zubin.org.in",
+  "website": "zubin.org.in",
+  "license": "MIT"
+}

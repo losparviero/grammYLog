@@ -28,7 +28,10 @@ Simply copy the plugin code from ```log.js``` and place it in your grammY projec
 
 <summary>
 If you want to try it out first:
+
 </summary>
+
+<br>
 
 Firstly, clone this repo.
 

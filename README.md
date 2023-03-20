@@ -39,7 +39,7 @@ If you want to try it out first:
 
 2. Then run ```npm i```.
 
-3. Rename example.env to .env and provide bot token.
+3. Rename .env.example to .env and provide bot token.
 
 </details>
 

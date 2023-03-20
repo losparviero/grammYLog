@@ -14,7 +14,7 @@
 
 */
 
-async function log(ctx) {
+async function log(ctx, next) {
   const from = ctx.from;
   const name =
     from.last_name === undefined
@@ -23,6 +23,7 @@ async function log(ctx) {
   console.log(
     `From: ${name} (@${from.username}) ID: ${from.id}\nMessage: ${ctx.message.text}`
   );
+  await next();
 }
 
 bot.use(log);

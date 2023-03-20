@@ -8,11 +8,13 @@ Logging plugin for the [grammY](https://github.com/grammyjs/grammy) framework!
 
 Currently the functionality is basic. 
 
-It is designed to log messages received limited to the text and captions of media messages to console.
+It is designed to log messages received.
+
+In the case of media messages, limited to the text/captions.
 
 Along with user details such as: first name + last name (if available), user ID, and username.
 
-I'll be adding more functions such as admin management soon.
+I'll be adding more functions such as admin management as well as support for a log channel soon.
 
 For the future, db integrations are possible to implement persistent logs.
 

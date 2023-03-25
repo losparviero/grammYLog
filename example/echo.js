@@ -10,13 +10,12 @@ const bot = new Bot(process.env.BOT_TOKEN);
 // Log [Plugin]
 
 async function log(ctx, next) {
-  const from = ctx.from;
+  let message = ctx.message?.text || ctx.channelPost?.text || undefined;
+  const from = ctx.from || ctx.chat;
   const name =
-    from.last_name === undefined
-      ? from.first_name
-      : `${from.first_name} ${from.last_name}`;
+    `${from.first_name || ""} ${from.last_name || ""}`.trim() || ctx.chat.title;
   console.log(
-    `From: ${name} (@${from.username}) ID: ${from.id}\nMessage: ${ctx.message.text}`
+    `From: ${name} (@${from.username}) ID: ${from.id}\nMessage: ${message}`
   );
   await next();
 }

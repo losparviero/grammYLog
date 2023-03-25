@@ -47,3 +47,5 @@ async function log(ctx, next) {
 
   await next();
 }
+
+bot.use(log);

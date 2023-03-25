@@ -4,6 +4,16 @@ Logging plugin for the [grammY](https://github.com/grammyjs/grammy) framework!
 
 <br>
 
+### v1.1
+
+Added log channel support.
+
+This should be more convenient than console messages.
+
+_Note:_ This feature is optional and will only work if you've supplied a log channel ID.
+
+<br>
+
 ### Features
 
 Currently the functionality is basic. 
@@ -59,7 +69,7 @@ A template has been included to get started right away.
 To use the template:
 
 ```shell
-node template
+node template/template
 ```
 
 Modify it as per your needs.

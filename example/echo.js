@@ -32,7 +32,7 @@ async function log(ctx, next) {
   } else if (ctx.inlineQuery && ctx.inlineQuery.query) {
     message = ctx.inlineQuery.query;
   } else if (ctx.inlineQuery) {
-    message = "Empty query message.";
+    message = "Empty inline message.";
   } else {
     message = "Unsupported message.";
   }

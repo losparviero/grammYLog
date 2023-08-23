@@ -27,12 +27,16 @@ async function log(ctx, next) {
 
   if (ctx.message && ctx.message.text) {
     message = ctx.message.text;
+  } else if (ctx.message && ctx.message.caption) {
+    message = ctx.message.caption;
+  } else if (ctx.message && ctx.message.voice) {
+    message = `Voice note (${ctx.message.voice.duration}s)`;
   } else if (ctx.message) {
     message = "Non-text message.";
   } else if (ctx.inlineQuery && ctx.inlineQuery.query) {
     message = ctx.inlineQuery.query;
   } else if (ctx.inlineQuery) {
-    message = "Empty inline message.";
+    message = "Empty query message.";
   } else {
     message = "Unsupported message.";
   }

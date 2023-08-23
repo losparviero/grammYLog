@@ -6,7 +6,7 @@ Logging plugin for the [grammY](https://github.com/grammyjs/grammy) framework!
 
 1. Log messages received by your bot to console.
 2. Log message content as well as first name, last name, username and Telegram ID of the sender.
-3. Only text messages are supported.
+3. Supports text and inline messages. In case of media messages, limited to captions.
 4. For the future, db integrations are possible to implement persistent logs.
 
 ### Usage

@@ -2,17 +2,11 @@
 
 Logging plugin for the [grammY](https://github.com/grammyjs/grammy) framework!
 
-### v1.1
-
-Added log channel support (might be unstable). This should be more convenient than console messages.
-
-_Note:_ This feature is optional and will only work if you've supplied a log channel ID.
-
 ### Features
 
 1. Log messages received by your bot to console.
 2. Log message content as well as first name, last name, username and Telegram ID of the sender.
-3. Only text messages are supported. In the case of media messages, limited to the text/captions.
+3. Only text messages are supported.
 4. For the future, db integrations are possible to implement persistent logs.
 
 ### Usage

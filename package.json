@@ -1,6 +1,6 @@
 {
   "name": "grammylog",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Logging plugin for the grammY framework!",
   "directories": {
     "example": "example",

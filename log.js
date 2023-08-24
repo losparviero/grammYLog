@@ -21,25 +21,32 @@ async function log(ctx, next) {
 
   let message;
 
-  if (ctx.message && ctx.message.text) {
-    message = ctx.message.text;
-  } else if (ctx.message && ctx.message.caption) {
-    message = ctx.message.caption;
-  } else if (ctx.message && ctx.message.voice) {
-    message = `Voice note (${ctx.message.voice.duration}s)`;
-  } else if (ctx.message) {
-    message = "Non-text message.";
-  } else if (ctx.inlineQuery && ctx.inlineQuery.query) {
-    message = ctx.inlineQuery.query;
-  } else if (ctx.inlineQuery) {
-    message = "Empty query message.";
+  if (ctx.chat.type === "private") {
+    if (ctx.message && ctx.message.text) {
+      message = ctx.message.text;
+    } else if (ctx.message && ctx.message.caption) {
+      message = ctx.message.caption;
+    } else if (ctx.message && ctx.message.voice) {
+      message = `Voice note (${ctx.message.voice.duration}s)`;
+    } else if (ctx.inlineQuery && ctx.inlineQuery.query) {
+      message = ctx.inlineQuery.query;
+    } else if (ctx.inlineQuery) {
+      message = "Empty query message.";
+    } else {
+      message = null;
+    }
   } else {
-    message = "Unsupported message.";
+    if (ctx.message.voice) {
+      message = `Voice note (${ctx.message.voice.duration}s)`;
+    }
   }
 
-  console.log(
-    `From: ${name} (@${from.username}) ID: ${from.id}\nMessage: ${message}`
-  );
+  if (message != null) {
+    console.log(
+      `From: ${name} (@${from.username}) ID: ${from.id}\nMessage: ${message}`
+    );
+  }
+
   await next();
 }
 
